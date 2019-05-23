@@ -1,11 +1,18 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Platform } from 'react-native';
 
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
 		flexDirection: 'row',
-		backgroundColor: '#1190FF',
 		justifyContent: 'space-around',
+		...Platform.select({
+      ios: {
+        backgroundColor: 'gray',
+      },
+      android: {
+        backgroundColor: 'green',
+      },
+    }),
 	},
 	box: {
 		margin: 10,
