@@ -5,9 +5,14 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Image style={styles.image} source={require('./pictures/paisaje.jpg')} />
-        <Image source={{ uri: 'https://facebook.github.io/react-native/docs/assets/favicon.png' }}
-          style={{ width: 100, height: 130 }} />
+        <Image
+          source={require('./pictures/paisaje.jpg')}
+          style={{ flex: 1, height: undefined, width: undefined, alignSelf: 'stretch' }}
+        />
+        <Image
+          source={{ uri: 'https://facebook.github.io/react-native/docs/assets/favicon.png' }}
+          style={{ width: 100, height: 130 }}
+        />
       </View>
     );
   }
@@ -21,8 +26,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: 'blue',
-    width: 200,
-    height: 200,
+    width: 400,
+    height: 400,
   },
   image: {
     width: 150,
