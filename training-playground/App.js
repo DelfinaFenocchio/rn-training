@@ -5,7 +5,15 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Container</Text>
+        <View style={styles.container1} >
+          <Text>Container1</Text>
+        </View>
+        <View style={styles.container2} >
+          <Text>Container2</Text>
+        </View>
+        <View style={styles.container3} >
+          <Text>Container3</Text>
+        </View>
       </View>
     );
   }
@@ -14,11 +22,26 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#dda0dd',
+    flexDirection: 'column',
+    borderRadius: 4,
     alignItems: 'center',
     justifyContent: 'center',
-    width:50,
-    height:100,
-    borderRadius: 4,
   },
+  container1: {
+    backgroundColor: '#dda0dd',
+    width: 70,
+    height: 100,
+  },
+  container2: {
+    backgroundColor: '#ffc0cb',
+    width: 100,
+    height: 130,
+    borderRadius: 9,
+  },
+  container3: {
+    backgroundColor: '#b0e0e6',
+    width: 130,
+    height: 160,
+  },
+
 });
