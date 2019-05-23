@@ -10,17 +10,19 @@ const styles = StyleSheet.create({
 	},
 	box: {
 		margin: 10,
-		height: 100,
 		width: 100,
 		alignContent: 'flex-start',
 	},
 	box1: {
+		height: '50%',
 		backgroundColor: 'red',
 	},
 	box2: {
+		height: '30%',
 		backgroundColor: 'white',
 	},
 	box3: {
+		height: '20%',
 		backgroundColor: 'purple',
 	},
 });
