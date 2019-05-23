@@ -3,27 +3,23 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		flexDirection: 'column',
-		backgroundColor: '#1190FF'
+		flexDirection: 'row',
+		backgroundColor: '#1190FF',
+		justifyContent: 'space-around',
 	},
 	box: {
-		margin: 7,
-		marginBottom: 10,
-		borderRadius: 10,
-	},
-	box1: {
+		margin: 10,
 		height: 100,
 		width: 100,
+		alignContent: 'flex-start',
+	},
+	box1: {
 		backgroundColor: 'red',
 	},
 	box2: {
-		height: 150,
-		width: 150,
 		backgroundColor: 'purple',
 	},
 	box3: {
-		height: 200,
-		width: 200,
 		backgroundColor: 'white',
 	},
 });
