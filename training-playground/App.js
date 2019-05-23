@@ -1,20 +1,41 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, ScrollView } from 'react-native';
 
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <View style={styles.container1} >
-          <Text>Container1</Text>
+      <ScrollView horizontal={true}>
+        <View style={styles.container}>
+          <View style={styles.container1} >
+            <Text>Container1</Text>
+          </View>
+          <View style={styles.container2} >
+            <Text>Container2</Text>
+          </View>
+          <View style={styles.container3} >
+            <Text>Container3</Text>
+          </View>
+          <View style={styles.container1} >
+            <Text>Container1</Text>
+          </View>
+          <View style={styles.container2} >
+            <Text>Container2</Text>
+          </View>
+          <View style={styles.container3} >
+            <Text>Container3</Text>
+          </View>
+          <View style={styles.container1} >
+            <Text>Container1</Text>
+          </View>
+          <View style={styles.container2} >
+            <Text>Container2</Text>
+          </View>
+          <View style={styles.container3} >
+            <Text>Container3</Text>
+          </View>
+
         </View>
-        <View style={styles.container2} >
-          <Text>Container2</Text>
-        </View>
-        <View style={styles.container3} >
-          <Text>Container3</Text>
-        </View>
-      </View>
+      </ScrollView>
     );
   }
 }
@@ -22,7 +43,7 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: 'column',
+    flexDirection: 'row',
     borderRadius: 4,
     alignItems: 'center',
     justifyContent: 'center',
